@@ -1,0 +1,16 @@
+
+State Machine - |AES|control:contrl|state
+Name state.round0 state.round10 state.round9 state.round8 state.round7 state.round6 state.round5 state.round4 state.round3 state.round2 state.round1 state.load_inputs state.init 
+state.init 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.load_inputs 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.round1 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.round2 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.round3 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.round4 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.round5 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.round6 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.round7 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.round8 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.round9 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.round10 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.round0 1 0 0 0 0 0 0 0 0 0 0 0 1 

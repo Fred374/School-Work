@@ -1,0 +1,32 @@
+use company;
+
+ALTER TABLE EMPLOYEE
+	DROP CONSTRAINT FK_EMPLOYEE_DNO;
+ALTER TABLE EMPLOYEE
+	DROP CONSTRAINT FK_EMPLOYEE_SUPERSSN;
+ALTER TABLE DEPT_LOCATIONS
+	DROP CONSTRAINT FK_DEPARTMENT_LOCATIONS_DNO;
+ALTER TABLE PROJECT
+	DROP CONSTRAINT FK_PROJECT_DNO;
+ALTER TABLE WORKS_ON
+	DROP CONSTRAINT FK_WORKS_ON_PNO;
+ALTER TABLE WORKS_ON
+	DROP CONSTRAINT FK_WORKS_ON_ESSN;
+ALTER TABLE DEPENDENTS
+	DROP CONSTRAINT FK_DEPENEDENTS_ESSN;
+ALTER TABLE DEPARTMENT
+	DROP CONSTRAINT FK_MGRSSN;
+
+delete from employee;
+drop table employee;
+delete from department;
+drop table department;
+delete from dependents;
+drop table dependents;
+delete from project;
+drop table project;
+delete from dept_locations;
+drop table dept_locations;
+delete from works_on;
+drop table works_on;
+DROP VIEW VDEPT_BUDGET;

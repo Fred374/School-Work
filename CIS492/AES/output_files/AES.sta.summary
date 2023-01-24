@@ -1,0 +1,245 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'clk'
+Slack : -28.220
+TNS   : -2575.237
+
+Type  : Slow 1100mV 85C Model Setup 'control:contrl|load_key'
+Slack : -14.235
+TNS   : -1699.679
+
+Type  : Slow 1100mV 85C Model Setup 'decrypt'
+Slack : -6.699
+TNS   : -2119.190
+
+Type  : Slow 1100mV 85C Model Setup 'next_button'
+Slack : -3.394
+TNS   : -48.485
+
+Type  : Slow 1100mV 85C Model Setup 'load_de'
+Slack : -1.634
+TNS   : -43.578
+
+Type  : Slow 1100mV 85C Model Hold 'load_de'
+Slack : -7.178
+TNS   : -1399.615
+
+Type  : Slow 1100mV 85C Model Hold 'clk'
+Slack : -6.471
+TNS   : -1057.638
+
+Type  : Slow 1100mV 85C Model Hold 'next_button'
+Slack : -4.800
+TNS   : -85.436
+
+Type  : Slow 1100mV 85C Model Hold 'control:contrl|load_key'
+Slack : 0.094
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'decrypt'
+Slack : 0.515
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.538
+TNS   : -256.295
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'load_de'
+Slack : -0.538
+TNS   : -212.422
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'next_button'
+Slack : -0.538
+TNS   : -15.112
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'decrypt'
+Slack : -0.297
+TNS   : -11.170
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'control:contrl|load_key'
+Slack : 0.112
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'clk'
+Slack : -26.956
+TNS   : -2476.594
+
+Type  : Slow 1100mV 0C Model Setup 'control:contrl|load_key'
+Slack : -16.736
+TNS   : -2008.477
+
+Type  : Slow 1100mV 0C Model Setup 'decrypt'
+Slack : -8.816
+TNS   : -2421.187
+
+Type  : Slow 1100mV 0C Model Setup 'next_button'
+Slack : -3.261
+TNS   : -47.436
+
+Type  : Slow 1100mV 0C Model Setup 'load_de'
+Slack : -1.645
+TNS   : -197.032
+
+Type  : Slow 1100mV 0C Model Hold 'clk'
+Slack : -8.876
+TNS   : -1723.438
+
+Type  : Slow 1100mV 0C Model Hold 'load_de'
+Slack : -7.011
+TNS   : -1151.098
+
+Type  : Slow 1100mV 0C Model Hold 'next_button'
+Slack : -2.943
+TNS   : -46.824
+
+Type  : Slow 1100mV 0C Model Hold 'control:contrl|load_key'
+Slack : -0.025
+TNS   : -0.025
+
+Type  : Slow 1100mV 0C Model Hold 'decrypt'
+Slack : 1.053
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.538
+TNS   : -251.628
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'load_de'
+Slack : -0.538
+TNS   : -204.920
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'next_button'
+Slack : -0.538
+TNS   : -15.044
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'decrypt'
+Slack : -0.292
+TNS   : -8.804
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'control:contrl|load_key'
+Slack : 0.123
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'clk'
+Slack : -17.264
+TNS   : -1421.645
+
+Type  : Fast 1100mV 85C Model Setup 'control:contrl|load_key'
+Slack : -8.184
+TNS   : -969.880
+
+Type  : Fast 1100mV 85C Model Setup 'decrypt'
+Slack : -3.819
+TNS   : -971.940
+
+Type  : Fast 1100mV 85C Model Setup 'next_button'
+Slack : -1.543
+TNS   : -16.184
+
+Type  : Fast 1100mV 85C Model Setup 'load_de'
+Slack : -0.464
+TNS   : -2.852
+
+Type  : Fast 1100mV 85C Model Hold 'clk'
+Slack : -4.491
+TNS   : -743.319
+
+Type  : Fast 1100mV 85C Model Hold 'load_de'
+Slack : -3.908
+TNS   : -614.368
+
+Type  : Fast 1100mV 85C Model Hold 'next_button'
+Slack : -1.401
+TNS   : -22.877
+
+Type  : Fast 1100mV 85C Model Hold 'control:contrl|load_key'
+Slack : 0.041
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'decrypt'
+Slack : 0.658
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.378
+TNS   : -114.149
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'decrypt'
+Slack : -0.373
+TNS   : -93.272
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'load_de'
+Slack : -0.281
+TNS   : -69.781
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'next_button'
+Slack : -0.239
+TNS   : -4.473
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'control:contrl|load_key'
+Slack : 0.194
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'clk'
+Slack : -14.884
+TNS   : -1265.557
+
+Type  : Fast 1100mV 0C Model Setup 'control:contrl|load_key'
+Slack : -6.491
+TNS   : -761.823
+
+Type  : Fast 1100mV 0C Model Setup 'decrypt'
+Slack : -2.733
+TNS   : -781.335
+
+Type  : Fast 1100mV 0C Model Setup 'next_button'
+Slack : -1.116
+TNS   : -12.618
+
+Type  : Fast 1100mV 0C Model Setup 'load_de'
+Slack : -0.174
+TNS   : -0.348
+
+Type  : Fast 1100mV 0C Model Hold 'load_de'
+Slack : -3.805
+TNS   : -720.124
+
+Type  : Fast 1100mV 0C Model Hold 'clk'
+Slack : -3.178
+TNS   : -443.518
+
+Type  : Fast 1100mV 0C Model Hold 'next_button'
+Slack : -2.319
+TNS   : -41.905
+
+Type  : Fast 1100mV 0C Model Hold 'control:contrl|load_key'
+Slack : 0.041
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'decrypt'
+Slack : 0.273
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.316
+TNS   : -89.389
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'decrypt'
+Slack : -0.316
+TNS   : -84.159
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'load_de'
+Slack : -0.275
+TNS   : -67.622
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'next_button'
+Slack : -0.239
+TNS   : -4.530
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'control:contrl|load_key'
+Slack : 0.250
+TNS   : 0.000
+
+------------------------------------------------------------

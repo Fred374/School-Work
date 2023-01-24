@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" class="proj2">
+<head>
+	<meta charset="utf-8">
+	<title>CIS 496 Project 2 Problem 1</title>
+	<link rel="stylesheet" href="TabDisplay.css">
+	<script src="projFunctions.js"></script>
+	<div class="dropdown"><button class="tabBtn1">Drop Down</button>
+			<div class="dropdown-content">
+				<button type="button" class="tabBtn2" onclick="tabFunc(event, 'name')">NAME</button>
+				<button type="button" class="tabBtn2" onclick="tabFunc(event, 'address')">ADDRESS</button>
+				<button type="button" class="tabBtn2" onclick="tabFunc(event, 'hours')">BUSINESS HOURS</button>
+				<button type="button" class="tabBtn2" onclick="tabFunc(event, 'menu')">MENU</button>
+				<button type="button" class="tabBtn2" onclick="tabFunc(event, 'services')">SERVICES AND FEATURES</button>
+			</div>
+		</div>
+</head>
+
+<body>
+	<center>
+		<div class="page">
+			<div class="name" id="name"></div>
+			<br>
+			<div class="address" id="address"></div>
+			<br>
+			<div class="hours" id="hours">
+				<table class="tableHours">
+					<tr class="tHead1">
+						<th>HOURS</th>
+						<th></th>
+					</tr>
+					<tr class="tRow1">
+						<td class="cRow1">Monday</td>
+						<td class="cRow1" id="mondayHrs"></td>
+					</tr>
+					<tr class="tRow2">
+						<td class="cRow1">Tuesday</td>
+						<td class="cRow1" id="tuesdayHrs"></td>
+					</tr>
+					<tr class="tRow1">
+						<td class="cRow1">Wednesday</td>
+						<td class="cRow1" id="wednesdayHrs"></td>
+					</tr>
+					<tr class="tRow2">
+						<td class="cRow1">Thursday</td>
+						<td class="cRow1" id="thursdayHrs"></td>
+					</tr>
+					<tr class="tRow1">
+						<td class="cRow1">Friday</td>
+						<td class="cRow1" id="fridayHrs"></td>
+					</tr>
+					<tr class="tRow2">
+						<td class="cRow1">Saturday</td>
+						<td class="cRow1" id="saturdayHrs"></td>
+					</tr>
+					<tr class="tRow1">
+						<td class="cRow1">Sunday</td>
+						<td class="cRow1" id="sundayHrs"></td>
+					</tr>
+				</table>
+			</div>
+			<br>
+			<div class="menu" id="menu"></div>
+			<br>
+			<div class="services" id="services">
+				<table class="tableServices">
+					<tr class="tHead1">
+						<th class="cHead2">SERVICES AND FEATURES</th>
+					</tr>
+					
+					<tr class="tRow3">
+						<td class="cRow2" id="serv1"></td>
+					</tr>
+					<tr class="tRow4">
+						<td class="cRow2" id="serv2"></td>
+					</tr>
+					<tr class="tRow3">
+						<td class="cRow2" id="serv3"></td>
+					</tr>
+					<tr class="tRow4">
+						<td class="cRow2" id="serv4"></td>
+					</tr>
+					<tr class="tRow3">
+						<td class="cRow2" id="serv5"></td>
+					</tr>
+					<tr class="tRow4">
+						<td class="cRow2" id="serv6"></td>
+					</tr>
+					<tr class="tRow3">
+						<td class="cRow2" id="serv7"></td>
+					</tr>
+					<tr class="tRow4">
+						<td class="cRow2" id="serv8"></td>
+					</tr>
+					<tr class="tRow3">
+						<td class="cRow2" id="serv9"></td>
+					</tr>
+					<tr class="tRow4">
+						<td class="cRow2" id="serv10"></td>
+					</tr>
+					<tr class="tRow3">
+						<td class="cRow2" id="serv11"></td>
+					</tr>
+					<tr class="tRow4">
+						<td class="cRow2" id="serv12"></td>
+					</tr>
+					<tr class="tRow3">
+						<td class="cRow2" id="serv13"></td>
+					</tr>
+					<tr class="tRow4">
+						<td class="cRow2" id="serv14"></td>
+					</tr>
+					<tr class="tRow3">
+						<td class="cRow2" id="serv15"></td>
+					</tr>
+					<tr class="tRow4">
+						<td class="cRow2" id="serv16"></td>
+					</tr>
+					<tr class="tRow3">
+						<td class="cRow2" id="serv17"></td>
+					</tr>
+					<tr class="tRow4">
+						<td class="cRow2" id="serv18"></td>
+					</tr>
+					<tr class="tRow3">
+						<td class="cRow2" id="serv19"></td>
+					</tr>
+					<tr class="tRow4">
+						<td class="cRow2" id="serv20"></td>
+					</tr>
+					<tr class="tRow3">
+						<td class="cRow2" id="serv21"></td>
+					</tr>
+					<tr class="tRow4">
+						<td class="cRow2" id="serv22"></td>
+					</tr>
+					<tr class="tRow3">
+						<td class="cRow2" id="serv23"></td>
+					</tr>
+					<tr class="tRow4">
+						<td class="cRow2" id="serv24"></td>
+					</tr>
+					<tr class="tRow3">
+						<td class="cRow2" id="serv25"></td>
+					</tr>
+					<tr class="tRow4">
+						<td class="cRow2" id="serv26"></td>
+					</tr>
+					<tr class="tRow3">
+						<td class="cRow2" id="serv27"></td>
+					</tr>
+					<tr class="tRow4">
+						<td class="cRow2" id="serv28"></td>
+					</tr>
+					<tr class="tRow3">
+						<td class="cRow2" id="serv29"></td>
+					</tr>
+					<tr class="tRow4">
+						<td class="cRow2" id="serv30"></td>
+					</tr>
+				</table>
+			</div>
+			<br>
+			<script>siteStart();</script>
+		</div>
+	</center>
+</body>
+</html>

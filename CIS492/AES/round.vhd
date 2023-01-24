@@ -1,0 +1,73 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+USE work.ALL;
+
+ENTITY round IS
+PORT(
+    d_in				:	IN  std_logic_vector(127 downto 0);
+    key				:	IN  std_logic_vector(127 downto 0);
+    last_mux_sel	:	IN  STD_LOGIC;
+    data_out		:	OUT std_logic_vector(127 downto 0)
+    );
+END round;
+
+ARCHITECTURE beh OF round IS
+
+COMPONENT s_box 
+PORT(
+	fs_box_in	:	IN  std_logic_vector(7 downto 0);
+	fs_box_out	:	OUT std_logic_vector(7 downto 0)
+	);
+END COMPONENT;
+
+COMPONENT shift_rows 
+PORT(
+	shiftrow_in		:	IN  std_logic_vector(127 downto 0);
+	shiftrow_out	:	OUT std_logic_vector(127 downto 0)
+	);
+END COMPONENT;
+
+COMPONENT mix_column 
+PORT(
+	mixcolumn_in	:	IN  std_logic_vector(127 downto 0);
+	mixcolumn_out	:	OUT std_logic_vector(127 downto 0)
+	);
+END COMPONENT;
+
+
+SIGNAL shiftrow	:	std_logic_vector(127 downto 0);
+SIGNAL bytesub		:	std_logic_vector(127 downto 0);
+SIGNAL mixcolumn	:	std_logic_vector(127 downto 0);
+SIGNAL mux			:	std_logic_vector(127 downto 0);
+
+BEGIN
+
+ -- generate 16 replica of 8-bit S-box
+
+sbox_16: FOR i IN 15 DOWNTO 0 GENERATE
+	sbox_map: s_box
+	PORT MAP(
+		fs_box_in	=>	d_in(8*i+7 downto 8*i),
+		fs_box_out	=>	bytesub(8*i+7 downto 8*i)
+		);
+END GENERATE sbox_16;
+
+	    
+shiftrow_s: shift_rows
+PORT MAP(
+	shiftrow_in => bytesub,
+	shiftrow_out => shiftrow
+	);
+
+mixcolumn_s: mix_column
+PORT MAP(
+	mixcolumn_in => shiftrow,
+	mixcolumn_out => mixcolumn
+	);
+
+mux <= mixcolumn WHEN last_mux_sel ='0' ELSE
+       shiftrow;
+
+data_out <= mux XOR key;
+
+END beh;

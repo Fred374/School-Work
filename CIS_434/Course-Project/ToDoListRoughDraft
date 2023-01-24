@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<header>
+		<title>To Do List</title>
+		<div style = "width:auto">
+			<h1>To Do</h1>
+		</div>
+	</header>
+	<!-- Allows usage of JQuery -->
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+	<body>
+	
+		<!-- CSS to format the title -->
+		<style>
+			h1 {
+				font-size : 60px;
+			}
+		</style>
+	
+		<!-- CSS to format the table -->
+		<style>
+			/* Formatting of the table */
+			table {
+			  font-family : arial, sans-serif;
+			  border-collapse : collapse;
+			  width : 100%;
+			}
+
+			/* Formatting for each cell of the table */
+			td, th {
+			  border : 2px solid black;
+			  text-align : center;
+			  padding : 8px;
+			}
+
+			/* Formattig for the color of every other cell */
+			tr:nth-child(even) {
+			  background-color : #dddddd;
+			}
+		</style>
+		
+		<!-- JavaScript to add tasks to the table -->
+		<script>
+			function addTask() {
+				var table = document.getElementById("todoList");
+				var row = table.insertRow(1);
+				var finished = row.insertCell(0);
+				var task = row.insertCell(1);
+				var priority = row.insertCell(2);
+				var dueDate = row.insertCell(3);
+				
+				var taskCheckbox = document.createElement("input");
+				var inputTaskName = document.getElementById("pendingTaskName").value;
+				var inputTaskPriority = document.getElementById("pendingTaskPriority").value;
+				var inputTaskDueDate = document.getElementById("pendingTaskDueDate").value;
+				
+				taskCheckbox.setAttribute("type", "checkbox");
+				taskCheckbox.setAttribute("name", "taskFinishedCheckbox");
+				finished.appendChild(taskCheckbox);
+				
+				task.innerHTML = inputTaskName;
+				priority.innerHTML = inputTaskPriority;
+				dueDate.innerHTML = inputTaskDueDate;
+			}
+		</script>
+		
+		<!-- Script to remove the completed tassks -->
+		<script>
+			$(document).ready(function(){
+				// Find and remove selected table rows
+				$(".delete-row").click(function(){
+					$("table").find('input[name="taskFinishedCheckbox"]').each(function(){
+						if($(this).is(":checked")){
+							$(this).parents("tr").remove();
+						}
+					});
+				});
+			});   
+		</script>
+		
+		<div id = "wrapper">
+			<input type="file" id="input-excel"/>
+		</div>
+		
+		<!-- Attempt at importing excel file -->
+		<script>
+			$('input-excel').change(function(e) {
+				var reader = new FileReader();
+				reader.readAsArrayBuffer(e.target.files[0]);
+				reader.onload = function(e) {
+					var data = new Uint8Array(reader.result);
+					var wb = XLSX.reader(data, {type:'array'});
+					var htmlstr = XLSX.write(wb, {sheet:"sheetno1", type:'binary', bookType:'html'});
+					$('#wrapper')[0].innerHTML += htmlstr;
+				}
+			});
+		</script>
+	
+		<!-- Add tasks to the ToDo list -->
+		<div>
+			<form>
+				<h2>Task:  <input type = "text" id = "pendingTaskName"></h2>
+				<h2>Priority:  <input type = "number" id = "pendingTaskPriority"></h2>
+				<h2>Due Date:  <input type = "date" id = "pendingTaskDueDate"></h2>
+				<button type = "button" onclick = addTask()>Add Task</button>
+				<button type = "button" class = "delete-row">Remove Finished Tasks</button>
+			</form>
+			<br><br><br>
+		</div>
+	
+		<!-- Print the table of the ToDo list -->
+		<div style="width:auto">
+			<table id = "todoList">
+				<tr>
+					<th>Finished</th>
+					<th>Task</th>
+					<th>Priority</th>
+					<th>Due Date</th>
+				</tr>
+				<tr>
+					<td><input type = "checkbox" name = "taskFinishedCheckbox"></td>
+					<td>Homework 1</td>
+					<td>2</td>
+					<td>2020-2-16</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

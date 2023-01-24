@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" class="proj2">
+	<head>
+		<title>CIS 496 Project 2, Problem 2</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="TabDisplay.css">
+		<script src="projFunctions.js"></script>
+	</head>
+
+	<body>
+		<center>
+			<video id="vid1" class="video1" muted>
+				<source src="C:\Users\Saturn\Videos\Movies\Batman Begins.mp4" type="video/mp4">
+			</video>
+			<br>
+			<div class="vidBtn">
+				<button id="vidBtn1" type="button" class="" onclick="vidFunc(event, 1)">></button>
+				<button type="button" class="" onclick="vidFunc(event, 2)">|></button>
+				<button type="button" class="" onclick="vidFunc(event, 3)">&lt&lt</button>
+				<button type="button" class="" onclick="vidFunc(event, 4)">&gt&gt</button>
+			</div>
+			<div id="vidTime">0:00:00</div>
+			<div id="vidDuration">0:00:00</div>
+		</center>
+	</body>
+</html>

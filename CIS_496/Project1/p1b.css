@@ -1,0 +1,55 @@
+.table1 {
+	font-family: Tahoma;
+	font-size: 13pt;
+	color: black;
+	display: table;
+	white-space: nowrap;
+	text-decoration: none;
+	margin: 20px;
+	padding: 20px;
+	border: solid 10px;
+	border-color: #d0d0ff;
+	border-spacing: 0;
+}
+
+.rHead {
+	display: table-row;
+}
+
+.rEven {
+	display: table-row;
+}
+
+.rOdd {
+	display: table-row;
+}
+
+.cCent {
+	text-align: center;
+}
+
+.cLeft {
+	text-align: left;
+}
+
+.rMarg {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.rTot {
+	display: table-row;
+	border-collapse: collapse;
+}
+
+.cTotCent {
+	text-align: center;
+	border-top: solid 2px;
+	border-top-color: black;
+}
+
+.cTotLeft {
+	text-align: left;
+	border-top: solid 2px;
+	border-top-color: black;
+}

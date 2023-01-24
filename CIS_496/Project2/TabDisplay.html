@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" class="proj2">
+	<head>
+		<title>CIS 496 Project 2</title>
+		<center><p><img src="CSU_Logo.jpg"width="11%"height="20%">
+		<p><h1>EECS Department</h1>
+		<p><h1>CIS 496 Independent Study</h1>
+		<p><h1>Fall 2021</h1>
+		<p><h2>09/22/2021</h2>
+		<p><h2>Project 2</h2>
+		<p><h2>Frederick Kelemen / 2715308</h2></center>
+		<link rel="stylesheet" href="TabDisplay.css">
+		<script src="projFunctions.js"></script>
+		<div class="tab1">
+			<button type="button" class="tabButton active" onclick="tabFunc(event, 'p1.html')">Home</button>
+			<button type="button" class="tabButton" onclick="tabFunc(event, 'p2.html')">CIS496 Class</button>
+			<button type="button" class="tabButton" onclick="tabFunc(event, 'p3.html')">MyCourses</button>
+			<button type="button" class="tabButton" onclick="tabFunc(event, 'p4.html')">Video Player</button>
+			<button type="button" class="tabButton" onclick="tabFunc(event, 'p5.html')">AddToContactList</button>
+		</div>
+	</head>
+	
+	<body>
+		<canvas class="canvas1" id="canvas1">
+			<img class="img2" src="pic4.jpg" id="img"/>
+			<script>
+				var myCanvas = document.getElementById("canvas1");
+				var myContext = myCanvas.getContext("2d");
+				var img = document.getElementById('img');
+				var x = 0;
+
+				img.onload = function imgLoad() {
+					animate();
+				};
+			</script>
+		</canvas>
+		<iframe scrolling="no" seamless="seamless" id="tabDisplayFrame" src="p1.html" class=frame1 title="Home"></iframe>
+	</body>
+</html>

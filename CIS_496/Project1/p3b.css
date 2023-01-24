@@ -1,0 +1,46 @@
+.table1 {
+	font-family: Tahoma;
+	font-size: 13pt;
+	color: black;
+	display: table;
+	white-space: nowrap;
+	text-decoration: none;
+	padding: 20px !important;
+	border: solid 10px;
+	border-color: #d0d0ff;
+	border-spacing: 0;
+	border-collapse: separate !important;
+}
+
+.cCent {
+	border-color: white !important;
+	text-align: center;
+	padding: 0px !important;
+}
+
+.cLeft {
+	text-align: left;
+	border-color: white !important;
+	padding: 0px !important;
+}
+
+.rTot {
+	display: table-row;
+	border-collapse: collapse;
+}
+
+.cTotCent {
+	text-align: center;
+	border-top: solid 2px !important;
+	border-top-color: black;
+	border-bottom-color: white !important;
+	padding: 0px !important;
+}
+
+.cTotLeft {
+	text-align: left;
+	border-top: solid 2px !important;
+	border-top-color: black;
+	border-bottom-color: white !important;
+	padding: 0px !important;
+}

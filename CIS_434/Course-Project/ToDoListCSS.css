@@ -1,0 +1,69 @@
+h1 {
+	font-size: 60px;
+	color:green;
+}
+
+.putincenter {
+   align:center;
+   transform:translate(-45px);
+}
+
+body {
+	background-image: url("https://imgur.com/KgpObT3.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover
+}
+
+img {
+	float: inherit;
+	background : rgba(248,250,251,0.0);
+}
+
+/* Formatting of the table */
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+/* Formatting for each cell of the table */
+td, th {
+	border: 2px solid black;
+	text-align: center;
+	padding: 8px;
+}
+
+/* Formattig for the color of every other cell */
+tr:nth-child(even) {
+	background-color: lightgreen;
+}
+
+tr:nth-child(odd) {
+	background-color: white;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  margin: 4px 2px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+.font {
+	color: black;
+	font-size: 22px;
+}
+
+
+
+
+
+
